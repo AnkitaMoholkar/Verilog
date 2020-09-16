@@ -65,7 +65,7 @@ module seven_segment(
     if (counter == 20000) step <= step + 1;
     end
     
-    always @*
+    always @ (*)
     begin
     case(step)
     0: val = val0;
